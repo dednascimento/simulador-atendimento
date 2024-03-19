@@ -31,17 +31,18 @@ export function gerarResposta(palavraChave) {
                 seletor = chave;
                 melhorPontuacao = pontuacao; 
                 console.log('Concluído')
+
+
+                console.log(scriptAtual.seletor)
+                let voc_atual = scriptAtual.seletor
+            
+                 
+                let indiceAleatorio = Math.floor(Math.random() * scriptAtual.seletor.length);
+                return voc_atual[indiceAleatorio];
                 break
             }
         }
         
     }
     
-    console.log(scriptAtual.seletor)
-    let voc_atual = scriptAtual.seletor
-
-     
-    let indiceAleatorio = Math.floor(Math.random() * scriptAtual.seletor.length);
-    return voc_atual[indiceAleatorio];
-
 }
