@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>UI</title>
+</head>
+<body>
+    
+    <!-- Barra Superior -->
+    <nav class="navbar">
+        <p class="title">Simulador de Atendimento - Chat</p>
+    </nav>
+    
+    <!-- Background -->
+    <div class="content">
+
+        <!-- Box branca -->
+        <div class="container">
+            
+            <!-- Cabeçalho CHAT -->
+            <div class="head-chat">
+                <button id="finalizar">Finalizar atendimento</button>
+            </div>
+
+            <!-- Conteúdo CHAT -->
+            <div class="content-chat" id="chat-container"></div>
+
+            <!-- Box mensagem -->
+            <div id="input-container">
+                <input type="text" id="user-input" placeholder="Digite sua mensagem...">
+                <button id="enviar">Enviar</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="module" src="./scripts/gerenciadorRespostas.js"></script>
+    <script type="module" src="./scripts/chat.js"></script>
+    <script type="module" src="script.js"></script>
+    
+</body>
+</html>
