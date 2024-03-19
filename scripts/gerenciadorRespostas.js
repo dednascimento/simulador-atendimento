@@ -38,11 +38,11 @@ export function gerarResposta(palavraChave) {
         break
     }
     
-
+    console.log(scriptAtual.seletor)
     let voc_atual = scriptAtual.seletor
 
      
-    let indiceAleatorio = Math.floor(Math.random() * voc_atual.length);
+    let indiceAleatorio = Math.floor(Math.random() * scriptAtual.seletor.length);
     return voc_atual[indiceAleatorio];
 
 }
