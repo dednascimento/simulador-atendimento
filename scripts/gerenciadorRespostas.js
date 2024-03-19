@@ -7,12 +7,9 @@ function mensagemMinuscula(texto) {
     return texto.toLowerCase().trim();
 }
 
-
-
-
 export function gerarResposta(palavraChave) {
 
-    let mensagemTratada = mensagemMinuscula(mensagem).replace(/,/g, '');
+    let mensagemTratada = mensagemMinuscula(palavraChave).replace(/,/g, '');
 
     // Separando a mensagem em palavras individuais
     mensagemTratada = mensagemTratada.split(/\s+/);
