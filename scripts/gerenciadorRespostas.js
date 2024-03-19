@@ -31,11 +31,10 @@ export function gerarResposta(palavraChave) {
                 seletor = chave;
                 melhorPontuacao = pontuacao; 
                 console.log('Concluído')
+                break
             }
         }
-
-        // Encerrar ciclo
-        break
+        
     }
     
     console.log(scriptAtual.seletor)
