@@ -39,7 +39,7 @@ export function gerarResposta(palavraChave) {
     }
     
 
-    voc_atual = scriptAtual.seletor
+    let voc_atual = scriptAtual.seletor
 
      
     let indiceAleatorio = Math.floor(Math.random() * voc_atual.length);
