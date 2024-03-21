@@ -174,6 +174,7 @@ export function respostaAutomatica() {
     upgradeStatus()
 }
 
+
 function ultimaInteracao() {
     if (TME_TOTAL.length = 0) {
         ULTIMA_INTERACAO = 0
