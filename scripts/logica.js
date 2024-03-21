@@ -178,8 +178,6 @@ export function respostaAutomatica() {
 function ultimaInteracao() {
     if (TME_TOTAL.length = 0) {
         ULTIMA_INTERACAO = 0
-    } else if (TME_TOTAL.length = -1) {
-        ULTIMA_INTERACAO = 0
     } else {
         ULTIMA_INTERACAO = ((TME_TOTAL.length) - 1)
     }
