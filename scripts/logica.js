@@ -15,6 +15,7 @@ let tempoAjustado;
 // TME
 let TME_TOTAL = []
 let ULTIMOS_TME = []
+let ULTIMA_INTERACAO = 0
 let contagemTME = 0;
 let intervaloID;
 let tempoEspera;
@@ -73,6 +74,7 @@ export function enviarMensagem() {
 
         // Se o intervalo já estiver sendo executado, limpe-o
         TME_TOTAL.push(intervaloID);
+        ultimaInteracao()
         ULTIMOS_TME.push(intervaloID);
         clearInterval(intervaloID);
         contagemTME = 0;
@@ -129,6 +131,8 @@ export function verificarTempoResposta() {
             dadosStatus = statusCliente.IRRITADO;
             statusAtual = tipoStatus[1];
             console.log('Status atual do cliente após verificação:', statusAtual);
+        } else if (intervaloID > (ULTIMA_INTERACAO + 50)){
+            respostaAutomatica()
         }
     }
 }
@@ -167,8 +171,17 @@ export function respostaAutomatica() {
     exibirMensagem(`Cliente (${dadosStatus.nome})`, mensagemAutomatica, 'cliente');
     tempoUltimaInteracao = Date.now(); // Atualize o tempo da última interação
     verificarTempoResposta(); // Verifique e atualize o status do cliente
+    upgradeStatus()
 }
 
+
+function ultimaInteracao() {
+    if (TME_TOTAL.length = 0) {
+        ULTIMA_INTERACAO = 0
+    } else {
+        ULTIMA_INTERACAO = ((TME_TOTAL.length) - 1)
+    }
+}
 
 // Adicionar ouvinte de eventos para o botão de envio de mensagem
 botaoEnviar.addEventListener('click', enviarMensagem);
@@ -214,14 +227,15 @@ function informacoesTime () {
     Mensagens enviadas: ${contagemMensagens}
     contagem: ${intervaloID}
     TME's TOTAL: ${TME_TOTAL}
+    ULTIMA INTERAÇÃO: ${ULTIMA_INTERACAO}
     TME's RECENTE: ${ULTIMOS_TME}
     `)
 }
 
 
 // Inicie o intervalo novamente
-setInterval(calcularTME, 1000)
-setInterval(infoTME, 2000)
+setInterval(calcularTME, 500)
+setInterval(infoTME, 2500)
 setInterval(verificarTempoResposta, 800);
 setInterval(upgradeStatus, 500);
 
@@ -229,11 +243,12 @@ function calcularTME() {
     let segundosTME
 
     // Adiciona 0.0008 à contagem
-    contagemTME += 0.01;
+    contagemTME += 0.0001;
     
     // Arredonda a contagem para o número mais próximo de segundos
     segundosTME = (Math.round(contagemTME * 1000) / 1000)
     intervaloID = Math.floor(segundosTME)
+    
 }
 
 // Função para calcular o TME
