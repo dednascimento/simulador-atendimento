@@ -185,3 +185,15 @@ button {
     clear: right;
 }
 
+#meuRange {
+    width: 200px;
+}
+
+.limite-atingido {
+    color: red;
+    background-color: #8c1717;
+}
+
+.limite-atingido:hover {
+    background-color: #d61f1f;
+}

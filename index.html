@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>UI</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Treinamento Chat</title>
 </head>
 <body>
     
@@ -21,6 +21,9 @@
             
             <!-- Cabeçalho CHAT -->
             <div class="head-chat">
+                <input type="range" min="0" max="" value="0" id="meuRange" disabled>
+
+
                 <button id="finalizar">Finalizar atendimento</button>
             </div>
 
@@ -36,9 +39,18 @@
         </div>
     </div>
 
-    <script type="module" src="./scripts/gerenciadorRespostas.js"></script>
-    <script type="module" src="./scripts/chat.js"></script>
-    <script type="module" src="script.js"></script>
+    <script type="module" src="./functions/clientes_scripts.js"></script>
+    <script type="module" src="./functions/adm_scripts.js"></script>
+    <script type="module" src="./functions/logica.js"></script>
+    <script type="module" src="./functions/main.js"></script>
+    <script>
+            // Envie a mensagem apertando enter
+            document.addEventListener('keydown', function(e) {
+                if(e.key == 'Enter') {
+                    document.getElementById('enviar').click();
+                }
+            });
+    </script>
     
 </body>
 </html>
