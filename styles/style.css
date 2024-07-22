@@ -15,7 +15,7 @@ body {
 }
 
 .navbar {
-    background-color: #ae2f29;
+    background-color: black;
 }
 
 .content {
@@ -26,7 +26,7 @@ body {
     padding: 20px; /* Ajuste o preenchimento conforme necessário */
 }
 
-.container_css {
+.container-css {
     display: grid;
     grid-template-rows: 2fr 10fr 1fr;
     grid-template-areas:
@@ -39,10 +39,10 @@ body {
     height: 88vh; /* Define uma altura fixa para a caixa de chat */
     max-height: 80vh; /* Define a altura máxima para garantir que a barra de rolagem seja exibida */
     width: 100%; /* Garante que a largura da caixa seja sempre igual à largura do contêiner pai */
-    margin-bottom: 10vh;
     border-radius: 8px;
     box-shadow: 4px 3px 3px grey;
 }
+
 
 #input-container {
     grid-area: message-input;
@@ -57,10 +57,7 @@ body {
 
 .head-chat {
     background-color: #efefef;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
+    height: fit-content;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
@@ -171,21 +168,46 @@ button {
     clear: right;
 }
 
-#meuRange {
-    width: 200px;
-}
-
 .limite-atingido {
-    color: red;
-    background-color: #8c1717;
+    background-color: red;
+    animation: Pisca infinite 27s;
 }
 
-.limite-atingido:hover {
-    background-color: #d61f1f;
+@keyframes Pisca{
+    0% { background-color: rgb(255, 107, 107); }
+    5% { background-color: white; }
+    10% { background-color: rgb(255, 107, 107); }
+    15% { background-color: white; }
+    20% { background-color: rgb(255, 107, 107); }
+    25% { background-color: white; }
+    30% { background-color: rgb(255, 107, 107); }
+    35% { background-color: white; }
+    40% { background-color: rgb(255, 107, 107); }
+    45% { background-color: white; }
+    50% { background-color: rgb(255, 107, 107); }
+    55% { background-color: white; }
+    60% { background-color: rgb(255, 107, 107); }
+    65% { background-color: white; }
+    70% { background-color: rgb(255, 107, 107); }
+    75% { background-color: white; }
+    80% { background-color: rgb(255, 107, 107); }
+    85% { background-color: white; }
+    90% { background-color: rgb(255, 107, 107); }
+    95% { background-color: white; }
+    100% { background-color: rgb(255, 107, 107); }
 }
 
-.icon_finalizar{
-    width: 15px;
-    height: 15px;
-    fill: white;
+.avatar-cliente{
+    width: 3vw;
+}
+
+.box-cliente{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 5px 10px 0px 10px;
+    width: 5.2vw;
+}
+
+.font-pequena{
+    font-size: 13px;
 }

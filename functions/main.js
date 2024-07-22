@@ -1,6 +1,5 @@
 import { enviarMensagem } from './logica.js';
 
-
 export function finalizarAtendimento() {
     window.location.reload()
 }
@@ -14,4 +13,4 @@ botaoEnviar.addEventListener('click', enviarMensagem);
 const botaoFinalizar = document.getElementById('finalizar');
 botaoFinalizar.addEventListener('click', finalizarAtendimento)
 
-console.log('Inicio de Atendimento!')
+console.log('Atendimento iniciado com sucesso')
