@@ -12,7 +12,6 @@ export const respostasClientes = {
     
     // Após envio
     'enviei': 'Sim, já chegou no meu e-mail.',
-    'envio': 'Sim, já chegou no meu e-mail.',
     'encaminhei': 'Sim, já chegou no meu e-mail.',
     'enviado': 'Sim, já chegou no meu e-mail.',
     'enviada': 'Sim, já chegou no meu e-mail.',
@@ -25,9 +24,7 @@ export const respostasClientes = {
     'olá': 'Oi',
     
     // DIA
-    'bom dia': 'Bom dia',
-    'boa tarde': 'Boa tarde',
-    'boa noite': 'Boa noite',
+
     
     // Finalização
     'ajudar em algo mais': 'Não, tudo certo obrigado',
@@ -94,6 +91,8 @@ export const respostasClientes = {
     'seria o problema': 'Quero a segunda via da fatura por email',
     'motivo do contato': 'Quero a segunda via da fatura por email',
     'motivo do atendimento': 'Quero a segunda via da fatura por email',
+    'bom dia posso ajudar': 'Bom dia quero a segunda via da fatura por email',
+    'boa tarde posso ajudar': 'Boa tarde quero a segunda via da fatura por email',
     
     //CONFIRMAÇÃO DE DADOS
     'cpf e nome completo do titular': 'Teste Play NAO ADD CPF 370.922.772-05',
@@ -164,7 +163,7 @@ export const respostasClientes = {
 };
 
 export const aguardandoCalmo = [
-    'Estou aguardando o atendimento.', 'Vão me transferir de novo?', 'Oi', '?', 'Cade meu atendimento', 'Estou no aguardo',
+    'Estou aguardando o atendimento.', 'Oi', '?', 'Cade meu atendimento', 'Estou no aguardo',
     'Olá', 'Ola', 'Olá?', 'Alguém?', 'Estou tentando pedir fatura',
     'Quando vão me atender ?', 'KD o atendimento', 'Alguem',
 ]
@@ -173,8 +172,8 @@ export const aguardandoIrritado = [
     'Não conseguem mandar uma fatura se quer', 'Se demora assim pra mandar 1 fatura imagina quando eu precisar de atendimento urgente', 
     'Estou tentando contato com vcs e ninguem me responde', '????', 'Nunca sou atendido', '??',
     'Eai meu cadê vcs', 'Depois me bloqueam por faturas em aberto', 'Atendimento demorado', 'vai me mandar a fatura ou vai me transferir ?',
-    'Essa disktop so enrola', 'To perdendo meu almoço pra isso', 'essa esperar vai levar o dia todo ???', 'pede um momento para o cliente e nunca mais volta',
-    'Na hora de contratar vocês são todos atenciosos',
+    'Essa empresa so enrola', 'To perdendo meu tempo pra isso', 'essa esperar vai levar o dia todo ???', 'pede um momento para o cliente e nunca mais volta',
+    'Na hora de contratar vocês são todos atenciosos', 'Vão me transferir de novo?',
 ]
 
 // export const respostaDesconhecida = [

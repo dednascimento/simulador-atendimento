@@ -1,4 +1,3 @@
-
 // Importar as respostas automáticas de saudação
 import { respostasClientes } from './clientes_scripts.js';
 
@@ -6,9 +5,8 @@ function mensagemMinuscula(texto) {
     return texto.toLowerCase().trim();
 }
 
-
 // Função para gerar respostas com base nas categorias
-export function gerarResposta(mensagem, statusAtual) {
+export function gerarResposta(mensagem) {
     // Converte a mensagem para minúsculas e remove espaços em volta
     const mensagemTratada = mensagemMinuscula(mensagem);
 
