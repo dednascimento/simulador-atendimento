@@ -24,7 +24,9 @@ export const respostasClientes = {
     'olá': 'Oi',
     
     // DIA
-
+    'bom dia!': 'Oi',
+    'boa noite!': 'Olá',
+    'boa tarde!': 'Olá',
     
     // Finalização
     'ajudar em algo mais': 'Não, tudo certo obrigado',
