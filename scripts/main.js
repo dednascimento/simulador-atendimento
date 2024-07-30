@@ -266,7 +266,7 @@ function finalizarAtendimento() {
 }
 
 function fecharModal () {
-    window.location.reload(true)
+    window.location.reload()
 }
 
 btn_iniciar_simul.addEventListener('click', iniciarAtendimento)
