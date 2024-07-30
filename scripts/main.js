@@ -223,8 +223,7 @@ function enviarMensagem() {
         // Simular resposta automática após o tempo de espera ajustado
         setTimeout(() => {
             exibirMensagem(`Cliente (${dadosStatus.nome})`, gerarResposta(mensagemUsuario), 'cliente')
-            tocaAudio.src = tracks[1]
-            tocaAudio.play()
+            audioPop.play()
         }, 8000);
     }
 }
