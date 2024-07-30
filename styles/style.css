@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+>>>>>>> 4b54135ec1645d023b60c726ea976e257a1ebc91
 body {
     overflow: hidden;
     display: grid;
@@ -35,7 +44,10 @@ body {
     width: 100%; /* Garante que a largura da caixa seja sempre igual à largura do contêiner pai */
     border-radius: 8px;
     box-shadow: 4px 3px 3px grey;
+<<<<<<< HEAD
     display: none;
+=======
+>>>>>>> 4b54135ec1645d023b60c726ea976e257a1ebc91
 }
 
 
@@ -74,7 +86,11 @@ button {
     background-color: #d61f1f;
     color: white;
     position: relative;
+<<<<<<< HEAD
     border-radius: 10px;
+=======
+    border-radius: 100px;
+>>>>>>> 4b54135ec1645d023b60c726ea976e257a1ebc91
     border-color: #d61f1f;
     width: 7%;
     text-align: center;
@@ -205,6 +221,7 @@ button {
 
 .font-pequena{
     font-size: 13px;
+<<<<<<< HEAD
 }
 
 dialog::backdrop {
@@ -235,4 +252,6 @@ dialog {
 
 #iniciar_simul {
     border-radius: 6px;
+=======
+>>>>>>> 4b54135ec1645d023b60c726ea976e257a1ebc91
 }
